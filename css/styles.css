@@ -36,4 +36,8 @@ header h1 {
   padding: 5em;
 }
 
+#showData {
+  display: none;
+}
+
 /*# sourceMappingURL=styles.css.map */
