@@ -1,7 +1,7 @@
 import { processTest, getSteps } from './functions.js'
 
 const btnSend = document.getElementById('btnSend'),
-      boxShowData = document.getElementById('showData');
+      containerTable = document.getElementById('containerTable');
 
 btnSend.addEventListener('click', e => {
     e.preventDefault();
@@ -12,6 +12,6 @@ btnSend.addEventListener('click', e => {
     getSteps(processTest(inputNumber), inputNumber);
     refInputNumber.value = '';
 
-    if(boxShowData) boxShowData.style.display = 'block'
+    if(containerTable) containerTable.style.display = 'block'
 });
 

@@ -1,7 +1,7 @@
 const table = document.getElementById('table'),
       boxSteps = document.getElementById('steps'); 
 
-let initialNumber, sumResult, combinedDigits
+let initialNumber, sumResult, combinedDigits, combinedDigitsResult
 
 
 export const convertToNumber = (string) => string = parseInt(string,10);
@@ -32,7 +32,8 @@ const addTwoDigits = (digits) => {
 
 const combineDigits = (a, b) => {
     a = a.toString(); // Convertimos a string para poder combinar los digitos
-    combinedDigits = `${a} y ${b} = ${a + b}`;
+    combinedDigits = `${a} y ${b} = `;
+    combinedDigitsResult = a + b;
     return convertToNumber(a + b);
 }
 
@@ -55,7 +56,8 @@ export const getSteps = (resultCombinedDigits, inputNumber) => {
             `<tr>
                 <td>${initialNumber}</td>
                 <td>${sumResult}</td>
-                <td>${combinedDigits}</td>
+                <td>${combinedDigits} ${combinedDigitsResult}</td>
+                <td>${steps}</td>
             </tr>`;
 
             resultCombinedDigits = processTest(resultCombinedDigits);
@@ -66,7 +68,8 @@ export const getSteps = (resultCombinedDigits, inputNumber) => {
     `<tr>
         <td>${initialNumber}</td>
         <td>${sumResult}</td>
-        <td>${combinedDigits}</td>
+        <td>${combinedDigits}<mark>${combinedDigitsResult}</mark></td>
+        <td>${steps}</td>
     </tr>`;
 
     if(elementRepeated) table.removeChild(elementRepeated)

@@ -11,34 +11,109 @@
 </head>
 <body>
     <header>
-        <h1>Test 1</h1>
+        <h1>Test Lógica JavaScript</h1>
     </header>
 
     <div class="main-container">
         <div class="box-documentation">
+            <h2>Documentación del Test</h2>
 
+            <p>Desarrolle un programa en JavaScript que permita al usuario ejecutar las siguientes acciones.</p> <br>
+
+            <p>Comenzando con el ingreso de un número entre 0 y 99 escrito con dos dígitos, realice lo siguiente:</p>
+
+            <ul>
+                <li>Sume los dos dígitos de la cifra.</li>
+                <li>Tome el dígito de la derecha, tanto del número inicial como del resultado de la suma.</li>
+                <li>Finalmente combine estos números.</li>
+            </ul>
+
+            <p>Al repetir este proceso varias veces se obtiene el número original.</p>
+
+            <p>Por ejemplo:</p>
+
+            <table>
+                <tr>
+                    <th>Inicio</th>
+                    <th>Sumar Dígitos</th>
+                    <th>Combinar Dígitos</th>
+                    <th>Pasos</th>
+                </tr>
+                <tr>
+                    <td><mark>26</mark></td>
+                    <td>2 + 6 = 08</td>
+                    <td>6 y 8 = 68</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>68</td>
+                    <td>6 + 8 = 14</td>
+                    <td>8 y 4 = 84</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>84</td>
+                    <td>8 + 4 = 12</td>
+                    <td>4 y 2 = 42</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>42</td>
+                    <td>4 + 2 = 06</td>
+                    <td>2 y 6 = <mark>26</mark></td>
+                    <td>4</td>
+                </tr>
+            </table>
+
+            <p>En este caso, tomó <strong>4</strong> pasos obtener el <strong>26</strong>.</p>
+
+            <p>Dado un número entero, indique la cantidad de pasos requeridos para obtener el número original.</p>
+
+            <table>
+                <tr>
+                    <th>Entrada de ejemplo</th>
+                    <th>Salida de ejemplo (pasos)</th>
+                </tr>
+                <tr>
+                    <td>26</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>55</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>00</td>
+                    <td>1</td>
+                </tr>
+            </table>
+
+            <p>El programa debe emitir en la página del navegador la seguidilla de las sumas, la combinación de los dígitos y la cantidad de pasos de la misma.</p>
         </div>
 
         <div class="box-test">
+            <h2>Ejecutar el Test</h2>
+
             <form class="container-input">
                 <p>Ingrese un número entre 0 y 99</p>
-                <input type="number" placeholder="0-99" id="inputNumber" autofocus>
+                <input type="number" placeholder="0-99" id="inputNumber" autofocus autocomplete="off">
                 <input type="submit" value="Ingresar Datos" id="btnSend">
             </form>
         
-            <div id="showData">
-                <table id="table">
-                    <tr>
-                      <th>Inicio</th>
-                      <th>Sumar Dígitos</th>
-                      <th>Combinar Dígitos</th>
-                    </tr>
-                </table>
-            
+            <div id="containerTable" class="container-table">
                 <p>
                     Cantidad de pasos requeridos para obtener el número original: 
                     <strong id="steps"></strong>
                 </p> 
+                
+                <table id="table">
+                    <tr>
+                        <th>Inicio</th>
+                        <th>Sumar Dígitos</th>
+                        <th>Combinar Dígitos</th>
+                        <th>Pasos</th>
+                    </tr>
+                </table>
             </div>
         </div>
     <div/>
