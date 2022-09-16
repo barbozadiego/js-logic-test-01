@@ -1,5 +1,6 @@
 const table = document.getElementById('table'),
-      boxSteps = document.getElementById('steps'); 
+      tableSteps = document.getElementById('tableSteps');
+    //   boxSteps = document.getElementById('steps'); 
 
 let initialNumber, sumResult, combinedDigits, combinedDigitsResult
 
@@ -46,35 +47,52 @@ export const processTest = (inputNumber) => {
 
 export const getSteps = (resultCombinedDigits, inputNumber) => {
     
-    let tbody = document.createElement('tbody'),
-        elementRepeated = document.getElementById('repeated'),
+    let tBodyElement = document.createElement('tbody'),
+        tBodyRepeated = document.getElementById('tBodyRepeated'),
+        trElement = document.createElement('tr'),
+        trRepeated = document.getElementById('trRepeated'),
         steps = 1;
 
+    trElement.innerHTML += `<td>${initialNumber}</td>`;
 
     while(resultCombinedDigits !== inputNumber) {
-            tbody.innerHTML +=  
-            `<tr>
-                <td>${initialNumber}</td>
-                <td>${sumResult}</td>
-                <td>${combinedDigits} ${combinedDigitsResult}</td>
-                <td>${steps}</td>
-            </tr>`;
+            if(steps === 1) {
+                tBodyElement.innerHTML +=  
+                `<tr>
+                    <td><mark>${initialNumber}</mark></td>
+                    <td>${sumResult}</td>
+                    <td>${combinedDigits} ${combinedDigitsResult}</td>
+                </tr>`;
+            } else {
+                tBodyElement.innerHTML +=  
+                `<tr>
+                    <td>${initialNumber}</td>
+                    <td>${sumResult}</td>
+                    <td>${combinedDigits} ${combinedDigitsResult}</mark></td>
+                </tr>`;
+            }
 
             resultCombinedDigits = processTest(resultCombinedDigits);
             steps++;
     }
 
-    tbody.innerHTML +=  
+    tBodyElement.innerHTML +=  
     `<tr>
         <td>${initialNumber}</td>
         <td>${sumResult}</td>
-        <td>${combinedDigits}<mark>${combinedDigitsResult}</mark></td>
-        <td>${steps}</td>
+        <td>${combinedDigits} <mark>${combinedDigitsResult}</mark></td>
     </tr>`;
 
-    if(elementRepeated) table.removeChild(elementRepeated)
+    trElement.innerHTML += `<td>${steps}</td>`;
+
+    if(tBodyRepeated) table.removeChild(tBodyRepeated);
+    if(trRepeated) trRepeated.remove();
     
-    table.appendChild(tbody)
-    tbody.id = 'repeated';
-    boxSteps.innerHTML = steps;
+    table.appendChild(tBodyElement)
+    tableSteps.appendChild(trElement)
+
+    tBodyElement.id = 'tBodyRepeated';
+    trElement.id = 'trRepeated';
+
+    // boxSteps.innerHTML = steps;
 }

@@ -37,31 +37,26 @@
                     <th>Inicio</th>
                     <th>Sumar Dígitos</th>
                     <th>Combinar Dígitos</th>
-                    <th>Pasos</th>
                 </tr>
                 <tr>
                     <td><mark>26</mark></td>
-                    <td>2 + 6 = 08</td>
+                    <td>2 + <u>6</u> = 0<u>8</u></td>
                     <td>6 y 8 = 68</td>
-                    <td>1</td>
                 </tr>
                 <tr>
                     <td>68</td>
-                    <td>6 + 8 = 14</td>
+                    <td>6 + <u>8</u> = 1<u>4</u></td>
                     <td>8 y 4 = 84</td>
-                    <td>2</td>
                 </tr>
                 <tr>
                     <td>84</td>
-                    <td>8 + 4 = 12</td>
+                    <td>8 + <u>4</u> = 1<u>2</u></td>
                     <td>4 y 2 = 42</td>
-                    <td>3</td>
                 </tr>
                 <tr>
                     <td>42</td>
-                    <td>4 + 2 = 06</td>
+                    <td>4 + <u>2</u> = 0<u>6</u></td>
                     <td>2 y 6 = <mark>26</mark></td>
-                    <td>4</td>
                 </tr>
             </table>
 
@@ -101,17 +96,23 @@
             </form>
         
             <div id="containerTable" class="container-table">
-                <p>
+                <!-- <p>
                     Cantidad de pasos requeridos para obtener el número original: 
                     <strong id="steps"></strong>
-                </p> 
+                </p>  -->
                 
                 <table id="table">
                     <tr>
                         <th>Inicio</th>
                         <th>Sumar Dígitos</th>
                         <th>Combinar Dígitos</th>
-                        <th>Pasos</th>
+                    </tr>
+                </table> <br>
+
+                <table id="tableSteps">
+                    <tr>
+                        <th>Entrada</th>
+                        <th>Salida (pasos)</th>
                     </tr>
                 </table>
             </div>
