@@ -1,0 +1,20 @@
+$primary-color: #00B4D8;
+$secondary-color: #2A3B47;
+$complementary-color: #192229;
+// $text-color: #C8CDD0;
+$text-color: #A0A7AC;
+
+$z-back: -10;
+$z-normal: 1;
+$z-basic: 10;
+$z-fixed: 100;
+$z-modal: 1000;
+
+
+$breakpoints: (
+  small: 360px,
+  medium: 720px,
+  medium-up: 767px,
+  large: 1024px,
+  xlarge: 1400px
+); 

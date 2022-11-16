@@ -12,12 +12,12 @@ Al repetir este proceso varias veces se obtiene el número original.
 #### Por ejemplo:
 
 
-| Inicio          | Sumar Dígitos | Combinar Dígitos        | Pasos         |
-| --------------- | ------------- | ----------------------- |:-------------:|
-| <mark>26</mark> | 2 + 6 = 08    | 6 y 8 = 68              | 1             |
-| 68              | 6 + 8 = 14    | 8 y 4 = 84              | 2             |
-| 84              | 8 + 4 = 12    | 4 y 2 = 42              | 3             |
-| 42              | 4 + 2 = 06    | 2 y 6 = <mark>26</mark> | 4             |
+| Inicio    | Sumar Dígitos | Combinar Dígitos |
+| --------- | ------------- | :--------------: |
+| 26        | 2 + 6 = 08    | 6 y 8 = 68       |
+| 68        | 6 + 8 = 14    | 8 y 4 = 84       |
+| 84        | 8 + 4 = 12    | 4 y 2 = 42       |
+| 42        | 4 + 2 = 06    | 2 y 6 = 26       |
 
 
 En este caso, tomó **4** pasos obtener el **26**.

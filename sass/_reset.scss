@@ -1,0 +1,74 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+a:link, a:visited, a:active {
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: $secondary-color;
+}
+
+table {
+    width: 100%;
+    border: .1em solid $text-color;
+    padding: 1em;
+
+    th, tr, td {
+        border: .1em solid $text-color;
+        padding: .5em;
+        text-align: center;
+    }
+}
+
+
+ul li {
+    list-style-position:inside;
+}
+
+
+
+
+@font-face {
+    font-family: 'icomoon';
+    src:
+      url('/fonts/icomoon.ttf?w6iylk') format('truetype'),
+      url('/fonts/icomoon.woff?w6iylk') format('woff'),
+      url('/fonts/icomoon.svg?w6iylk#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+} 
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'icomoon' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+}
+
+.icon-linkedin:before {
+    content: "\e900";
+}
+
+.icon-github:before {
+    content: "\e901";
+}
+
+.icon-instagram:before {
+    content: "\e902";
+  }
+
+.icon-twitter:before {
+    content: "\e903";
+}
+
+

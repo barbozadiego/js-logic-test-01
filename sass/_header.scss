@@ -1,0 +1,22 @@
+header {
+    padding: 5em 0;
+    background-color: $primary-color;
+
+    h1 {
+        text-align: center;
+        color: white;
+    }
+
+    @include media(large) {
+        font-size: .9rem;
+    };
+    
+    @include media(medium-up) {
+        font-size: .8rem;
+        // padding: 5em 3em;
+    };
+
+    @include media(medium) {
+        font-size: .7em
+    };
+}

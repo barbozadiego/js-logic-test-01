@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     
     <title>Test Lógica JS #01</title>
     <link rel="icon" href="favicon.png">
@@ -11,16 +11,14 @@
 </head>
 <body>
     <header>
-        <h1>Test Lógica JavaScript</h1>
+        <h1>🧐🧪 Test Lógica JS</h1>
     </header>
 
     <div class="main-container">
-        <div class="box-documentation">
-            <h2>Documentación del Test</h2>
+        <section class="box-documentation">
+            <h2>📄 Documentación del Test</h2>
 
-            <p>Desarrolle un programa en JavaScript que permita al usuario ejecutar las siguientes acciones.</p> <br>
-
-            <p>Comenzando con el ingreso de un número entre 0 y 99 escrito con dos dígitos, realice lo siguiente:</p>
+            <p>Desarrolle un programa en JavaScript que permita al usuario ejecutar las siguientes acciones. Comenzando con el ingreso de un número entre 0 y 99 escrito con dos dígitos, realice lo siguiente:</p>
 
             <ul>
                 <li>Sume los dos dígitos de la cifra.</li>
@@ -29,7 +27,6 @@
             </ul>
 
             <p>Al repetir este proceso varias veces se obtiene el número original.</p>
-
             <p>Por ejemplo:</p>
 
             <table>
@@ -61,7 +58,6 @@
             </table>
 
             <p>En este caso, tomó <strong>4</strong> pasos obtener el <strong>26</strong>.</p>
-
             <p>Dado un número entero, indique la cantidad de pasos requeridos para obtener el número original.</p>
 
             <table>
@@ -84,30 +80,25 @@
             </table>
 
             <p>El programa debe emitir en la página del navegador la seguidilla de las sumas, la combinación de los dígitos y la cantidad de pasos de la misma.</p>
-        </div>
+        </section>
 
-        <div class="box-test">
-            <h2>Ejecutar el Test</h2>
+        <section class="box-test">
+            <h2>⚙️ Ejecutar el Test</h2>
 
             <form class="container-input">
                 <p>Ingrese un número entre 0 y 99</p>
-                <input type="number" placeholder="0-99" id="inputNumber" autofocus autocomplete="off">
-                <input type="submit" value="Ingresar Datos" id="btnSend">
+                <input type="number" placeholder="0-99" id="inputNumber" autofocus autocomplete="off" class="get-number">
+                <input type="submit" value="Ingresar Datos" id="btnSend" class="btn-send">
             </form>
         
             <div id="containerTable" class="container-table">
-                <!-- <p>
-                    Cantidad de pasos requeridos para obtener el número original: 
-                    <strong id="steps"></strong>
-                </p>  -->
-                
                 <table id="table">
                     <tr>
                         <th>Inicio</th>
                         <th>Sumar Dígitos</th>
                         <th>Combinar Dígitos</th>
                     </tr>
-                </table> <br>
+                </table>
 
                 <table id="tableSteps">
                     <tr>
@@ -116,8 +107,54 @@
                     </tr>
                 </table>
             </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="copyright">
+             <p>Desarrollado por:  
+                <strong>
+                    <a href="https://barbozadiego.com" target="_blank" rel="noopener noreferrer">barbozadiego</a>
+                </strong>
+            </p>
         </div>
-    <div/>
+        
+        <nav class="social-media">
+            <ul class="content-social-media">
+                <li>
+                    <a href='https://github.com/barbozadiego'
+                       target="_blank"
+                       rel="noopener noreferrer">
+                       <span class="icon-github"></span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href='https://linkedin.com/in/barbozadiego' 
+                       target="_blank" 
+                       rel="noopener noreferrer">
+                       <span class="icon-linkedin"></span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href='https://instagram.com/barbozadiego_dev'
+                       target="_blank"
+                       rel="noopener noreferrer">
+                       <span class="icon-instagram"></span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href='https://twitter.com/barbozadiego_'
+                       target="_blank"
+                       rel="noopener noreferrer">
+                       <span class="icon-twitter"></span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
 
     <script type="module" src="js/index.js"></script>
 </body>
