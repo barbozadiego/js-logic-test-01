@@ -4,8 +4,9 @@ const table = document.getElementById('table'),
 
 let initialNumber, sumResult, combinedDigits, combinedDigitsResult
 
-
 export const convertToNumber = (string) => string = parseInt(string,10);
+
+
 
 const evaluateDigits = (inputNumber) => {
     if(inputNumber < 100) {
@@ -15,7 +16,7 @@ const evaluateDigits = (inputNumber) => {
         else initialNumber = inputNumber;
 
         return inputNumber;
-    }
+    } 
 }
 
 const addTwoDigits = (digits) => {
