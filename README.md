@@ -1,4 +1,4 @@
-## Test Lógica JavaScript - 01 
+## 🧪 Test Lógica JavaScript - 01 
 
 Desarrolle un programa en JavaScript que permita al usuario ejecutar las siguientes acciones. Comenzando con el ingreso de un número entre 0 y 99 escrito con **dos** dígitos, realice lo siguiente:
 
